@@ -3,7 +3,7 @@ clear
 Get-Command -Noun Variable
 # Clear-Variable
 # Get-Variable
-# New-Variable
+# New-Variable 
 # Remove-Variable
 # Set-Variable
 
@@ -13,7 +13,7 @@ $a.GetType()
 
 # New-Variable
 New-Variable -Name b
-$b -eq $null
+$null -eq $b
 
 $b = 11
 $b
@@ -23,3 +23,4 @@ Set-Variable -Name b -Value "pippo"
 $b
 
 Get-Variable -Name a -ValueOnly
+
