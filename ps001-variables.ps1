@@ -22,5 +22,6 @@ $b.GetType()
 Set-Variable -Name b -Value "pippo"
 $b
 
+Get-Variable
 Get-Variable -Name a -ValueOnly
-
+Get-ChildItem -Path Variable:
