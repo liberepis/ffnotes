@@ -1,3 +1,47 @@
+
+<#PSScriptInfo
+
+.VERSION 1.0
+
+.GUID 03cf9a56-887d-4754-8fd5-a85c16c60147
+
+.AUTHOR Fabio Fantini
+
+.COMPANYNAME
+
+.COPYRIGHT
+
+.TAGS
+
+.LICENSEURI
+
+.PROJECTURI
+
+.ICONURI
+
+.EXTERNALMODULEDEPENDENCIES 
+
+.REQUIREDSCRIPTS
+
+.EXTERNALSCRIPTDEPENDENCIES
+
+.RELEASENOTES
+
+
+.PRIVATEDATA
+
+#> 
+
+
+
+<# 
+
+.DESCRIPTION 
+ Studies about variables in PowerShell 
+
+#> 
+Param()
+
 clear
 
 Get-Command -Noun Variable
