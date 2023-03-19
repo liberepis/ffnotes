@@ -181,7 +181,7 @@ do {
             $finished = $true
             break
         }
-        default { Write-Error -Message "Unknown command"}
+        default { Write-Error -Message "Unknown command" }
     }
 } until ($finished)
 
