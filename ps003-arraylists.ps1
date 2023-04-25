@@ -4,10 +4,10 @@
 [System.Collections.ArrayList]$bl=(4, 5, 6)
 $al
 $bl
-$al.add(4)
-$al.Add((5,6,7))
+$al.Add(4)
+$al.Add((5,6,7)) # $al[4] contiene un vettore
 $al
-$al.RemoveAt(6,1)
+$al.RemoveAt(6)
 $al[6]
 $al[5]
 $al[0]
@@ -22,4 +22,7 @@ $al[3]
 foreach ($i in (0..6)) { $al[$i] }
 $al[6]
 
+$numbers = New-Object -TypeName System.Collections.ArrayList
+foreach ($i in (0..6)) { $numbers.Add($i) }
+$numbers
 

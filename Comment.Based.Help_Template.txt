@@ -1,0 +1,18 @@
+<#
+https://learn.microsoft.com/en-us/powershell/scripting/developer/help/comment-based-help-keywords?view=powershell-7.3
+
+.SYNOPSIS
+A brief description of the function or script. This keyword can be used only once in each topic.
+
+.DESCRIPTION
+A detailed description of the function or script. This keyword can be used only once in each topic.
+
+.PARAMETER <Parameter-Name>
+The description of a parameter. You can include a .PARAMETER keyword for each parameter in the function or script.
+
+.EXAMPLE
+A sample command that uses the function or script, optionally followed by sample output and a description.
+
+.NOTES
+Additional information about the function or script.
+#>
