@@ -44,3 +44,17 @@ $contactNewStyle.Telefono = "0212345678"
 $rubrica.Add($contactNewStyle.psobject.Copy())
 
 $rubrica
+
+class ClassContact {
+    [string]$Cognome
+    [string]$Nome
+    [string]$Telefono
+}
+
+$contact = New-Object -TypeName ClassContact
+
+$contact.Cognome = "Mario"
+$contact.Nome = "Rossi"
+$contact.Telefono = "0612345678"
+
+$contact
