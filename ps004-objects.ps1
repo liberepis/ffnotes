@@ -6,8 +6,26 @@ Notes on object creation and manipulating
 In this file we talk about object creation and manipulating
 #>
 
-$contact = New-Object -TypeName pscustomobject
-Add-Member -InputObject $contact -MemberType NoteProperty -Name Cognome -Value ""
-Add-Member -InputObject $contact -MemberType NoteProperty -Name Nome -Value ""
+# Creating an object for a contact
+# this is not a class, is a single instance in memory
+$contactOldStyle = New-Object -TypeName pscustomobject
+Add-Member -InputObject $contactOldStyle -MemberType NoteProperty -Name Cognome -Value ""
+Add-Member -InputObject $contactOldStyle -MemberType NoteProperty -Name Nome -Value ""
+Add-Member -InputObject $contactOldStyle -MemberType NoteProperty -Name Phone -Value ""
 
-$contact | Get-Member
+Write-Host "We have created an object for a contact"
+$contactOldStyle | Get-Member | Out-Host
+
+# creating an object for a contact in a new style
+
+$properties = [ordered]@{
+    Cognome = "";
+    Nome = "";
+    Telefono = ""
+}
+# full name for pscustomobject is System.Management.Automation.PSCustomObject
+$contactNewStyle = New-Object -TypeName PSCustomObject -Property $properties
+
+Write-Host "another object for a contact"
+$contactNewStyle | Get-Member | Out-Host
+
