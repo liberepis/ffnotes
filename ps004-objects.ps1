@@ -29,3 +29,18 @@ $contactNewStyle = New-Object -TypeName PSCustomObject -Property $properties
 Write-Host "another object for a contact"
 $contactNewStyle | Get-Member | Out-Host
 
+$rubrica = New-Object -TypeName System.Collections.ArrayList
+
+$contactNewStyle.Nome = "Mario"
+$contactNewStyle.Cognome = "Rossi"
+$contactNewStyle.Telefono = "0612345678"
+
+$rubrica.Add($contactNewStyle.PSObject.Copy())
+
+$contactNewStyle.Nome = "Giuseppe"
+$contactNewStyle.Cognome = "Verdi"
+$contactNewStyle.Telefono = "0212345678"
+
+$rubrica.Add($contactNewStyle.psobject.Copy())
+
+$rubrica
