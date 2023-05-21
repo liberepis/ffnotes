@@ -51,3 +51,11 @@ printarray -vett $a
 #typed arrays
 [Int32[]]$ia = 123, 456, 789
 $ia
+
+# this create a fixed size array of 1000 int32
+$arr1000 = New-Object -TypeName int32[] -ArgumentList 1000
+Write-Host "we create an array of 1000 elements:"
+$arr1000.Count # returns 1000
+
+$arr1000[999] = 123
+$arr1000
